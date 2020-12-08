@@ -1,4 +1,4 @@
-# fasthsv - Benchmark different approaches to HSV->RGB conversion.
+# benchhsv - Benchmark different approaches to HSV->RGB conversion.
 
 ## Introduction
 
@@ -64,6 +64,8 @@ sys	0m0.016s
 
 The fast implementation is after this hacker news comment:
 https://news.ycombinator.com/item?id=21158888
+
+This version can actually be written as an expression, so does not even need an algorithm!
 
 ```
 #define CLAMP01(x) ( (x) < 0 ? 0 : ( x > 1 ? 1 : (x) ) )
