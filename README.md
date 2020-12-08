@@ -91,7 +91,7 @@ static __inline__ void fast_hsv_to_rgb
 
 ## Conclusion
 
-Table look up is only faster if you use a naive implementation.
+Table look up is only faster than a naive implementation.
 
 Branchless HSV to RGB conversion pays off big time: I measured almost a factor 6.
 
